@@ -3,33 +3,43 @@ body{
     
 }
 .header{
-    background-color: red;
+    background-color: #FF0000;
     height: 100px;
     width: 100%;
     margin-right: auto;
 }
 
 #invest{
-    border: 1px solid black;
+    border: 1px solid #000000;
     margin-top: 30px;
     margin-left: 40px;
     height: 200px;
     width: 350px;
-    background-color: yellow;
+    background-color: #FFFF00;
     
     
 }
-
 .text p{
     padding: 45px;
-
 }
 #photo{
-    border: 1px solid black;
+    border: 1px solid #000000;
     margin-top: 30px;
     margin-left: 40px;
     height: 200px;
-    width: 350px;
-    background-color: green;
-    margin-left:15%;
+    width: 200px;
+    background-image: url(./img/IMG_6685.PNG);
+    background-position: center;
+
+    background-color: #00FF00;
+    margin-left:55%;
+}
+#prop{
+    margin-top: 30px;
+    background-color:  #deb887;
+    height: 200px;
+    width: 100px;
+    margin-left: 30%;
+    
+
 }
