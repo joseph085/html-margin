@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="/favicon.svg"/>
+    <title>SMB</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168941642-1"></script>
+    <script src="https://d2twz9av6or5hk.cloudfront.net/1.6/adally.js"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168941642-1');
+    </script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/swiper.min.css" rel="stylesheet">
+   
+    <link href="/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="/css/style.min.css?ver=1.29" rel="stylesheet">
+    <link href="/css/fields.css" rel="stylesheet">
+    <style>
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1240px;
+            }
+        }
+        #main section#content .all-news .news-item {
+            height: 320px !important;
+            min-height: 320px !important;
+            max-height: 320px !important;
+        }
+        .c-item {
+            height: 320px !important;
+            min-height: 320px !important;
+            max-height: 320px !important;
+        }
+        .single-news table {
+            overflow-wrap: anywhere;
+            width: 100% !important;
+        }
+
+        #parent-circle {
+            position: relative;
+            width: 70vw;
+            height: 70vw;
+            border: 0.4vw solid rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+            transform: rotate(0deg);
+            transition: transform 0.7s linear;
+            animation: rotate 7s infinite linear;
+            margin-top: 50px;
+            left: 8%;
+        }
+        #parent-circle .circle {
+            display: block;
+            position: absolute;
+            width: 13%;
+            height: 13%;
+            margin: -8%;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+        }
+        #parent-circle  i {
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            background:transparent;
+            margin: 6px;
+
+        }
+        #parent-circle .circle.twitter11 {
+            background-color: #9C7E1A;
+            transform: translate(0vw);
+        }
+         #parent-circle .circle.linkedin {
+            background-color: #9C7E1A;
+            transform: translate(36vw);
+        }
+         #parent-circle .circle.telegram {
+            background-color: #9C7E1A;
+            transform: rotate(60deg) translate(36vw) rotate(-60deg);
+        }
+         #parent-circle .circle.instagram {
+            background-color: #9C7E1A;
+            transform: rotate(120deg) translate(36vw) rotate(-120deg);
+        }
+         #parent-circle .circle.facebook {
+            background-color: #9C7E1A;
+            transform: rotate(180deg) translate(36vw) rotate(-180deg);
+        }
+        #parent-circle .circle.twitter {
+            background-color: #9C7E1A;
+            transform: rotate(240deg) translate(36vw) rotate(-240deg);
+        }
+        #parent-circle .circle.youtube {
+            background-color: #9C7E1A;
+            transform: rotate(300deg) translate(36vw) rotate(-300deg);
+        }
+
+
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(50deg);
+            }
+            to {
+                -webkit-transform: rotate(200deg);
+            }
+        }
+
+        .repeater {
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #C0C0C0;
+            margin-bottom: 1rem;
+        }
+
+        .repeatable {
+            margin-bottom: 1rem;
+            border: 2px solid #ab9a2b70;
+            padding: 1rem;
+            background-color: #ab9a2b05;
+            -webkit-border-radius: 0.25rem;
+            -moz-border-radius: 0.25rem;
+            border-radius: 0.25rem;
+        }
+
+
+        .remove {
+            display: block;
+            float: right;
+        }
+
+        .half-holder {
+            width: 100%;
+            padding-bottom: 0.5rem;
+            margin-top: 23px;
+        }
+
+        label {
+            display: block;
+        }
+
+        .half {
+            float: left;
+            width: 49%;
+            margin-right: 2%;
+        }
+
+        .half:nth-child(even) {
+            margin-right: 0;
+        }
+
+        input[type="text"], input[type="tel"], input[type="email"], textarea {
+            margin: 0;
+            padding: 0.25rem;
+            width: 100%;
+        }
+
+        input[type="submit"], input[type="button"] {
+            padding: 0.5rem;
+        }
+
+        input[type="submit"] {
+            width: auto;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+
+        textarea {
+            resize: vertical;
+            overflow-y: scroll;
+        }
+
+        .add_btn {
+            display: block;
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        /* CLEARFIX */
+        .clearfix:before, .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+    </style>
+    <style>
+        .radio-input {
+            visibility: hidden;
+        }
+        .radio-label {
+            position: relative;
+            padding-left: 35px;
+        }
+        .radio-label:after {
+            content: "";
+            display: inline;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            border-radius: 50%;
+        }
+        .radio-border {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            outline: solid 3px #9c7e1a;
+            border-radius: 50%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        .radio-input:checked + .radio-label:after {
+            transition: all 0.5s;
+            background-color: #9c7e1a;
+        }
+        .question_form
+        {
+            border: 2px solid #9c7e1a;
+            padding: 10px 0 0 10px;
+        }
+
+        /* This css is for normalizing styles. You can skip this. */
+
+
+        .form-group_checkbox {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .form-group_checkbox input {
+            padding: 0;
+            height: initial;
+            width: initial;
+            margin-bottom: 0;
+            display: none;
+            cursor: pointer;
+        }
+
+        .form-group_checkbox label {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .form-group_checkbox label:before {
+            content:'';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 2px solid #9c7e1a;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .form-group_checkbox input:checked + label:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 9px;
+            width: 6px;
+            height: 14px;
+            border: solid #9c7e1a;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        #main section#content .contact-2 .contact-inner .form-group {
+            width: 98%;
+        }
+        .radiogroup {
+            margin: 10px;
+        }
+
+        #s-questionnaire{
+            height: 100%;
+        }
+        #s-questionnaire .s-questionnaire{
+            height: 100%;
+        }
+        .s-rdo-response{
+            background-color:  #9B823E;
+            color: white;
+            text-align: center;
+            line-height: 35px;
+            position: absolute;
+            width: 97%;
+            top: 10px;
+            display: block;
+        }
+
+        #s-questionnaire .radio-label:after{
+            width: 16px !important;
+            height: 16px !important;
+            left: -1px !important;
+            top: -1px !important;
+        }
+
+        .questionnaire_start_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .questionnaire_start_btn{
+            background-color: #9c7e1a;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 17px;
+            cursor: pointer;
+            font-size: 2rem;
+            border: none;
+            outline: none;
+            transition: .3s all;
+        }
+
+        .questionnaire_start_btn:hover{
+            color: #9c7e1a;
+            background-color: white;
+            border: #9c7e1a 1px solid;
+        }
+
+        .questionnaireb_btn{
+            position: absolute;
+            top: 85%;
+            cursor: pointer;
+            padding: 9px 35px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            color: #555;
+            transition: .3s all;
+            background-color: white;
+
+        }
+        .questionnaireb_btn:hover{
+            color: white;
+            border-color: #9c7e1a;
+            background: #9c7e1a;
+        }
+
+        .swiper-slide-flexable{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide-flexable .form-group{
+            width: 80%;
+        }
+
+        #s-questionnaire .radio-label{
+            padding-left: 23px;
+        }
+        #s-questionnaire .radiogroup{
+            margin-left: 0px;
+        }
+
+        @media  only screen and (max-width: 767px) {
+            .swiper-slide-flexable{
+                height: 300px;
+            }
+            .swiper-slide-flexable .form-group{
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <!-- Top -->
+<div class="main-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="menu-inner">
+                    <!-- Responsive language -->
+                    <ul class="responsive-language">
+                                                                                <li class="">
+                                <a href="https://smb.gov.az/az/all-news/azerbaycan-investisiya-ve-medeniyyet-sammiti-oz-isine-baslayib">AZ</a>
+                            </li>
+                                                                                                            <li class="">
+                                <a href="https://smb.gov.az/ru/all-news/nacal-rabotu-azerbaidzanskii-sammit-po-investiciyam-i-kulture">RU</a>
+                            </li>
+                                                                                                                            </ul>
+                    <!-- Search -->
+                    <div class="search">
+                        <form action="/en/search" method="get">
+                            <input type="text" name="result" placeholder="Search" autofocus="true">
+                            <button type="submit"><i class="ion-ios-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="row" style="flex-direction: row-reverse">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <ul class="menu main-menu-additional">
+                                <li class="search-button d-none d-md-block">
+                                    <span class="ion-ios-search-strong"></span>
+                                    <div class="search-panel">
+                                        <form action="/en/search" method="get">
+                                            <input type="text" name="result"
+                                                   placeholder="Search"
+                                                   autofocus="true">
+                                            <button type="submit"><i class="ion-ios-search-strong"></i></button>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a href="https://e-smb.gov.az"><span class="iconify" style="margin-right: 10%; margin-bottom: 5%;" data-icon="ion-log-in-outline" data-inline="false"></span>Sign In</a>
+                                </li>
+                                <li class="lang_disabled d-none d-md-block">
+    <span>EN</span>
+    <ul>
+                                <li>
+                <a href="https://smb.gov.az/az/all-news/azerbaycan-investisiya-ve-medeniyyet-sammiti-oz-isine-baslayib">Azərbaycan</a>
+            </li>
+                                            <li>
+                <a href="https://smb.gov.az/ru/all-news/nacal-rabotu-azerbaidzanskii-sammit-po-investiciyam-i-kulture">Русский</a>
+            </li>
+                                            </ul>
+</li>                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top" style="margin-top: 1px;">
+    <div class="container">
+        <div class="row">
+            <span class="ion-android-menu responsive-menu-button"></span>
+            <div class="col-md-4">
+                <a href="/en" class="logo">
+                    <img src="/img/logo-en.svg"
+                         alt="Azərbaycan Respublikasının Kiçik və Orta Biznesin İnkişafı Agentliyi">
+                </a>
+            </div>
+            <div class="col-md-8">
+                <div class="president d-none d-md-block">
+                    <span class="quote">We believe Azerbaijan’s socio-economic development is closely
+linked with entrepreneurship and its future development!</span>
+                    <img class="fon" src="/img/fon.png" alt="">
+                    <img class="heydar_aliyev" src="/img/h_aliyev.png" alt="">
+                    <img class="signature" src="/img/Signature_of_Heydar_Aliyev.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Menu -->
+<div class="main-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="menu-inner">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <!-- Menu -->
+                            <ul class="menu left-side">
+                                                                                                            <li class="dropdown"><span>Agency</span>
+                                            <ul>
+                                                                                                                                                            <li class="">
+                                                            <a href="/en/nav/about-us">About us</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="https://smb.gov.az/storage/148Fərman-en.pdf">Charter</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/council">Supervisory Board</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/management">Management</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/structure">Structure</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="dropdown"><span>Public Board</span>
+                                                            <ul>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/events" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">Events</a>
+                                                                    </li>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/public-council-members" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">Public Council members</a>
+                                                                    </li>
+                                                                                                                            </ul>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/contact">Agency address</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/strategic-road-map">Strategic road map</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/reports">Reports</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="dropdown"><span>Public Relations</span>
+                                                            <ul>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/interviews-and-articles" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">İnterviews and articles</a>
+                                                                    </li>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/official-speech" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">Official speech</a>
+                                                                    </li>
+                                                                                                                            </ul>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/surveys">Surveys</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/career-growth">Career growth</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/public-open-database">Public open database</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/attributes">Attributes</a>
+                                                        </li>
+                                                                                                                                                </ul>
+                                        </li>
+                                                                                                                                                <li class="dropdown"><span>Legislation</span>
+                                            <ul>
+                                                                                                                                                            <li class="">
+                                                            <a href="/en/nav/constitution">Constitution</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/laws">Laws</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/decrees">Decrees</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/resolutions">Resolutions</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/the-decisions-of-the-cabinet-of-ministers">The Decisions of the Cabinet of Ministers</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/publicly-registered-laws-and-regulations">Publicly Registered Laws and Regulations</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/provisions">Provisions</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/orders">Orders</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/guidelines">Guidelines</a>
+                                                        </li>
+                                                                                                                                                </ul>
+                                        </li>
+                                                                                                                                                <li class="">
+                                            <a href="/en/all-news">News</a>
+                                        </li>
+                                                                                                                                                <li class="">
+                                            <a href="/en/nav/message-by-the-chairman">Message by the Chairman</a>
+                                        </li>
+                                                                                                                                                <li class="dropdown"><span>Business services</span>
+                                            <ul>
+                                                                                                                                                            <li class="">
+                                                            <a href="/en/nav/smb-friend">SMB Friend</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="dropdown"><span>Training</span>
+                                                            <ul>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/sme-development-centers" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">SME development centers</a>
+                                                                    </li>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/video-trainings" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">Video trainings</a>
+                                                                    </li>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/international-professional-development-course" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">International professional development course</a>
+                                                                    </li>
+                                                                                                                            </ul>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/smb-houses">SMB Houses</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/protection-of-interests-of-smbs">Protection of Interests of SMBs</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/public-private-partnership">Public-Private Partnership</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/development-of-womens-entrepreneurship">Development of Women’s Entrepreneurship</a>
+                                                        </li>
+                                                                                                                                                </ul>
+                                        </li>
+                                                                                                                                                <li class="dropdown"><span>Business support</span>
+                                            <ul>
+                                                                                                                                                            <li class="">
+                                                            <a href="/en/nav/startup-certificate">Startup Certificate</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/grant">Grant</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/market-research">Market research</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="dropdown"><span>Market access</span>
+                                                            <ul>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/access-to-trade-networks-1" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">Access to trade networks</a>
+                                                                    </li>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/support-for-participation-in-exhibitions" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">Support for participation in exhibitions</a>
+                                                                    </li>
+                                                                                                                                    <li class="">
+                                                                        <a href="/en/nav/online-sales-support" style="font-family: 'myFirstFont'; letter-spacing: 0.25px">Online sales support</a>
+                                                                    </li>
+                                                                                                                            </ul>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/sme-cluster">SME cluster</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/lifelong-learning">Lifelong learning</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/other-supports">Other supports</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/international-cooperation-1">International Cooperation</a>
+                                                        </li>
+                                                                                                                                                </ul>
+                                        </li>
+                                                                                                                                                <li class="dropdown"><span>Requests</span>
+                                            <ul>
+                                                                                                                                                            <li class="">
+                                                            <a href="/en/contact-form/aze-citizen">Directly appeal to agency</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="http://qebul.smb.gov.az">Public Hours</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/legislation-on-review-of-the-citizens-applications-1">Legislation on review of the citizens’ applications</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/faq">FAQ</a>
+                                                        </li>
+                                                                                                                                                </ul>
+                                        </li>
+                                                                                                                                                <li class="dropdown"><span>KOB Volunteers</span>
+                                            <ul>
+                                                                                                                                                            <li class="">
+                                                            <a href="/en/nav/about-kob-volunteers-program">About KOB Volunteers Program</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/nav/volunteers-council">Volunteers Council</a>
+                                                        </li>
+                                                                                                                                                                                                                <li class="">
+                                                            <a href="/en/volunteer">Join SME Volunteers</a>
+                                                        </li>
+                                                                                                                                                </ul>
+                                        </li>
+                                                                                                                                                <li class="">
+                                            <a href="/en/contact-form/aze-citizen">Directly appeal to agency</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="quotes">
+    <marquee direction="left" loop="true" onmouseover="this.stop();" onmouseout="this.start();">
+                    <a href="">&quot;Produce, do not harm nature!&quot; exhibition and trade fair</a>
+                    <a href="">KOBİA&#039;s activities disclosed at the &quot;International Caspian Energy Forum Istanbul 2023&quot;</a>
+                    <a href="">Produce, do not harm nature!</a>
+                    <a href="">Tatarstan-Azerbaijan business forum held</a>
+                    <a href="">Documentary feature film &quot;First century of eternity. Heydar Aliyev - 100&quot;</a>
+                    <a href="">To the attention of SMBs seeking to present their products and services at &quot;Caspian Agro&quot; and &quot;InterFood Azerbaijan&quot; exhibitions!</a>
+                    <a href="">&quot;Azerbaijan - Türkiye: Joint Centenary&quot; event held</a>
+                    <a href="">Short film about the conference on &quot;Heydar Aliyev and the development of entrepreneurship in Azerbaijan&quot;</a>
+                    <a href="">Conference on the 100th anniversary of the great leader Heydar Aliyev and &quot;Entrepreneurs&#039; Day&quot; held</a>
+                    <a href="">Public discussion on the development of the tourism sector held</a>
+            </marquee>
+</div><!-- Quotes -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <!-- Section #content -->
+                <div class="col-xs-12 col-md-12">
+                    <!-- Section #content -->
+                    <section id="content">
+                        <!-- Single news -->
+                        <div class="single-news">
+                            <span class="title">Azerbaijan Investment and Culture Summit started </span>
+                            <span class="date"><i class="ion-ios-clock-outline"></i>27.10.21</span>
+                            <div class="news">
+                                <img class="cover" src="https://smb.gov.az/storage/3012/1.jpg"
+                                     alt="Azerbaijan Investment and Culture Summit started ">
+                                
+                                <p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>On October 27, the Azerbaijan Investment and Culture Summit started working in Baku. The event, arranged by the Small and Medium Business Development Agency (SMBDA) and the Youth Forum of the Organization of Islamic Cooperation (ICYF) with the support of the ministries of Economy and Culture, was attended by the ministers of the Organization of Islamic Cooperation (OIC) member states, representatives of international organizations and the diplomatic corps, businessmen, investors, start-ups, youth organizations, in total, representatives from more than 20 countries. The summit, dedicated to the 880th anniversary of the genius Azerbaijani poet and thinker Nizami Ganjavi, will last until October 29.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>According to the traditions of the Organization of Islamic Cooperation, the event started with the reading of ayats from the holy Quran.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>Speaking at the opening of the summit, the minister of economy of Azerbaijan Mikayil Jabbarov stressed that the Organization of Islamic Cooperation member states are united by common cultural and religious values, and our country attaches great importance to membership in this organization. Over the past years, the organization has sharply condemned the aggressive policy of Armenia against Azerbaijan and adopted resolutions defending the fair position of our country. The Organization of Islamic Cooperation encourages collaboration between Muslim countries in not only politics but also trade, economic, investment, humanitarian, scientific, and technical spheres. It was noted that the Azerbaijan Investment and Culture Summit is an effective platform for expanding economic cooperation between the organization member countries, as well as promoting the investment potential of Azerbaijan, including Karabakh and Eastern Zangezur.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>The minister informed in detail of the favorable investment and business environment created in our country, as well as the restoration and construction work performed in the liberated territories, regional infrastructure projects, and the Alat Free Economic Zone. It was noted that the Azerbaijani government performs large-scale work to revive our territories liberated from occupation and turn this region into a zone of peace and cooperation. The minister of economy stressed the opening of Fuzuli International Airport on October 26 with the participation of the heads of state of Azerbaijan and Turkey and the great economic importance of the restoration of Karabakh and its broad regional integration opportunities. Azerbaijan is interested in attracting investments from partner countries for restoration and construction of Karabakh. Our government is currently investing heavily in the region. The economic reintegration of the territories liberated from the occupation, the use of new opportunities for international and regional transport and transit corridors will be a great impetus for the development of our country. The minister noted that the Karabakh region has great potential in transport and transit, renewable energy, agriculture, industry, mining, and other areas and called on entrepreneurs from the member states of the Organization of Islamic Cooperation and the Cooperation Council of Turkic-speaking States to actively participate in investing in the liberated territories and revival of the region.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>Mikail Jabbarov stated that according to the National Priorities for socio-economic development until 2030, approved by the head of state, a mid-term development strategy of our country for 2022-2026 is currently being developed, and issues of new tax incentives for production activity, investment mechanisms, the tourism sector, and territories liberated from occupation will further be considered.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>Head of the financial office of the President of Turkey Goksel Ashan, minister of youth and sports of Azerbaijan Farid Gayibov, head of the Investment Office under the President of Turkey Burak Daghlioghlu, president of the World Confederation of Ethnosport Nejmettin Bilal Erdogan, president of the National Confederation of Entrepreneurs&rsquo; (Employers&#39;) Organizations of Azerbaijan Mammad Musayev, deputy minister of Industry and Technology of Turkey Chetin Ali Donmez, secretary-general of the Research Centre For Islamic History, Art, and Culture (IRCICA) Mahmut Erol Kilich, chairman of the SMBDA Board Orhan Mammadov, and president of ICYF Taha Ayhan spoke at the opening ceremony. Former Malaysian prime minister Mahathir Mohamad addressed the summit participants with a video message.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>Speaking at the summit, the chairman of the SMBDA Board Orkhan Mammadov noted that the event coincided with the 1st anniversary of our glorious victory in the Patriotic War and the challenges caused by the COVID-19 pandemic, and these important issues were reflected in the event&rsquo;s agenda. It was noted that the summit would be important for establishing new business ties and promoting investment opportunities in our country, in particular, the territories liberated from occupation.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>On the first summit day, panel discussions were arranged on the topics &quot;Investing in Karabakh: prospects&quot;, &quot;Economic and trade prospects of the Organization of Islamic Cooperation member states: challenges and opportunities&quot; and &quot;Strong startup ecosystem for economic recovery in the post-COVID period&rdquo;. At the panels with the participation of officials, businessmen, and startups from Azerbaijan and the OIC member states, thematic speeches were made, and the participants&rsquo; questions were answered. At the panel on &quot;Investing in Karabakh: prospects&quot;, which aroused particular interest among the summit participants, information was provided on the economic and investment potential of the Azerbaijani territories liberated from the occupation, the situation in the territories destroyed and plundered by Armenia for about 30 years, as well as restoration and construction work performed there by the Azerbaijani state. &nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>As part of the event, an exhibition was also arranged, where 50 new startups from the OIC member countries were presented. The exhibition presents start-p projects in the fields of food and agriculture, &ldquo;green&rdquo; economy, financial technologies, online applications, environment, renewable energy, smart technologies, air transport, logistics, etc. The exhibition is aimed at contributing to the popularization of young entrepreneurs and startups from the OIC countries on a global scale and providing support in funding startup projects by investors. For information, in total, 500 startups from 61 countries applied for presenting their projects to potential investors within the framework of the summit, from among which 50 startups were selected.</span></p><p style='margin:0cm;margin-bottom:.0001pt;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Arial",sans-serif;'>&nbsp;</span></p><p><span style='font-size:16px;font-family:"Arial",sans-serif;'>Note that on October 28, panel sessions will be arranged on the topics &ldquo;Cultural aspects in investment decision-making&rdquo;, &ldquo;Investing in startup projects&rdquo;, &ldquo;The role of technological investments in achieving sustainable development&rdquo;, and the exhibition of startups will continue. On October 29, the summit participants will visit Shusha and Fuzuli and take part in cultural events dedicated to the 880th anniversary of Nizami Ganjavi in Ganja.</span></p><p data-f-id="pbf" style="text-align: center; font-size: 14px; margin-top: 30px; opacity: 0.65; font-family: sans-serif;">Powered by <a href="https://www.froala.com/wysiwyg-editor?pb=1" title="Froala Editor">Froala Editor</a></p>
+                                <div class="grid">
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3013/2.jpg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3013/2.jpg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3014/3.jpeg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3014/3.jpeg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3015/4.jpg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3015/4.jpg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3016/5.jpg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3016/5.jpg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3017/6.jpg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3017/6.jpg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3018/7.jpg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3018/7.jpg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3019/8.jpeg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3019/8.jpeg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3020/9.jpeg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3020/9.jpeg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3021/10.CR2" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3021/10.CR2" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                            <div class="grid-item">
+                                            <a href="https://smb.gov.az/storage/3022/11.jpeg" data-fancybox="gallery">
+                                                <img src="https://smb.gov.az/storage/3022/11.jpeg" alt="" class="img-thumbnail">
+                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="useful">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel useful-owl-carousel owl-theme">
+                                            <div>
+                            <a href="https://www.heydaraliyevcenter.az/#main" target="_blank">
+                                <img src="https://smb.gov.az/storage/1/JPVSHASwvrzI3gkKyvxkgRWdV1oLxnQP.png"
+                                     alt="Heydər Əliyev">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://president.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/2/8D3AohK_kCqvviz5v7II77atY1Pjcc6G.png"
+                                     alt="İlham Əliyev">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://mehriban-aliyeva.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/3/UIIe7gpIocbChaiVurK9vwEhlS5jSt9Y.png"
+                                     alt="Mehriban Əliyeva">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://heydar-aliyev-foundation.org/az" target="_blank">
+                                <img src="https://smb.gov.az/storage/4/n9gYXwfwWUh6V1BEVKuUJmWLgRTBznRD.png"
+                                     alt="Heydər Əliyev Fondu">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://www.virtualkarabakh.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/6/2n0T5WYock0OOQfe2szOgk6OuInLdE65.png"
+                                     alt="Virtual Qarabağ">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://www.economy.gov.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/2139/JPVSHASwvrzI3gkKyvxkgRWdV1oLxnQP.png"
+                                     alt="Azərbaycan Respublikasının İqtisadiyyat Nazirliyi">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://kobim.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/2135/10v103sMYXWRTQ7AUViruvrAUnzxXojx.png"
+                                     alt="KOB İNKİŞAF MƏRKƏZLƏRİ">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://kobmarket.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/2536/kobmarket-b.png"
+                                     alt="KOB Market">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://azranking.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/3091/azranking.png"
+                                     alt="Azərbaycan Respublikasının Biznes Mühiti və Beynəlxalq Reytinqlər üzrə Komissiyası">
+                            </a>
+                        </div>
+                                            <div>
+                            <a href="https://www.dxr.az/" target="_blank">
+                                <img src="https://smb.gov.az/storage/8443/DXR.png"
+                                     alt="Dövlət Xidmətləri Portalı">
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>                    </section>
+                </div>
+            </div>
+            <!-- Map
+                <div class="map"></div> -->
+        </div>
+        <!-- Section footer -->
+<section id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="footer-inner">
+                    <ul class="socicon">
+                                                    <li>
+                                <a href="https://facebook.com/smb.gov.az/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.instagram.com/smb.gov.az/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            </li>
+                                                    <li>
+                                <a href="https://twitter.com/smbgovaz?s=20" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            </li>
+                                                    <li>
+                                <a href="https://twitter.com/MammadovOrkh" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.linkedin.com/company/kobia" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.youtube.com/channel/UC1deA3Px2asRFrsoOlBMddQ" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+                            </li>
+                                                    <li>
+                                <a href="https://t.me/smbgovaz" target="_blank" title="Telegram"><i class="fa fa-telegram"></i></a>
+                            </li>
+                                                    
+                    </ul>
+                    <p> &copy; Small and Medium Business Development Agency of the Republic of Azerbaijan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBx9utroBuNW2K7aHNVbxyT660aopK83Es"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="/js/gmaps.js"></script>
+<script src="/js/map.js"></script>
+
+<script src="/js/popper.min.js"></script>
+<script src="/js/swiper.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/index.js"></script>
+
+<script>
+    // To add javascript functionality - if javascript is enabled
+    $(document).ready(function () {
+        // insert an "add more" button after the last element
+        $('#count').before('<input class="add_btn" id="add_btn" type="button" value="Əlavə Et">');
+
+        // add the "remove" link to each section
+        $('.repeatable').prepend('<a class="remove" href="javascript:void(0);">[Sil]</a>');
+
+        updateRemoveLinks = function () {
+            // if "repeatable" element count is greater than 1...
+            if ($('.repeatable').length > 1) {
+                // ...show the "remove" link
+                $('.repeatable').children('.remove').css({'display':'block'});
+                // otherwise...
+            } else {
+                // don't display the "remove" link
+                $('.repeatable').children('.remove').css({'display':'none'});
+            }
+        }
+
+        updateRemoveLinks();
+
+        // DESTROY!!! >.<
+        // this method does all the checking necessary for deleting an element
+        destroy = function () {
+            // when the user clicks the "remove" link on a section...
+            $('.remove').click(function(){
+                // ...get that link's "repeatable" parent (container) and remove it
+                $(this).parent('.repeatable').remove();
+                // now, for each remaining repeatable element...
+                $('.repeatable').each(function(){
+                    var r = this; // store "this", to avoid scope problems
+                    var num = $(r).index() + 1; // store the index+1 of the current "repeatable" in the collection (zero-based indexes)
+                    // RE-NUMBER ALL THE THINGS!!! >.<
+                    // change the heading to reflect the index+1 value
+                    $(r).children('h2').html('Person ' + num).text();
+                    // go through all text box elements within...
+                    $(r).find('input, textarea').each(function(){
+                        // ...change their "structure" data attributes to reflect the index+1 value of the "repeatable" element
+                        dattr = $(this).data('structure') + num;
+                        $(this).attr({
+                            'id':dattr,
+                            'name':dattr
+                            // update the "for" attribute on the parent element (label)
+                        }).parent('label').attr('for',dattr);
+                    });
+                    //adjust the counter
+                    $('#count').val($('.repeatable').length);
+                });
+                updateRemoveLinks();
+            });
+        }
+
+        // now, call the "destroy" method, so that when the page loads, this method is declared and will affect all "repeatable" elements - this has something to do with adding/removing dynamic elements, I wrote this so long ago, that I don't recall exactly how it works...
+        destroy();
+
+        // when the user clicks the "add more" button...
+        $('.add_btn').click(function(){
+            var original = $('.repeatable').last().find(':checked');
+            console.log(original);
+            // clone the previous element (a "repeatable" element), and insert it before the "add more" button
+            $(this).prev('.repeatable').clone().insertBefore(this).html();
+            // get the number of repeatable elements on the page
+            var num = $('.repeatable').length;
+            // again, get the previous element (a "repeatable" element), and change the header to reflect it's new index
+            $(this).prev('.repeatable').children('h2').html('Person ' + num);
+            // now, go through all text boxes within the last "repeatable" element...
+            $('.repeatable').last().find('input, textarea').each(function(){
+                // ...change their "structure" data attributes to reflect the index+1 value of the "repeatable" element
+                dattr = $(this).data('structure');
+                console.log("dattr", dattr);
+                $(this).attr({
+                    'id':dattr,
+                    'name':dattr
+                    // update the "for" attribute on the parent element (label)
+                }).parent('label').attr('for',dattr);
+                // clear the input field contents of the new "repeatable"
+                // if the type of the input is "radio"...
+                if ($(this).attr('type') == 'radio') {
+                    // remove the checked attribute
+                    $(this).removeAttr('checked');
+                    // for all other inputs...
+                } else {
+                    // clear the value...
+                    $(this).val('');
+                }
+                if (original.length == 1) {
+                    original.prop('checked',true);
+                }
+                //adjust the counter
+                $('#count').val($('.repeatable').length);
+            });
+            // run the "destroy" method... I forget why... just do it, and don't gimme no lip.
+            destroy();
+            updateRemoveLinks();
+        });
+    });
+
+    var MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+
+    $(document).ready(function() {
+        $('#upload-product_images').change(function() {
+            fileSize = this.files[0].size;
+            if (fileSize > MAX_FILE_SIZE) {
+                this.setCustomValidity("Faylın ölçüsü 5M meqabaytdan çox olmamalıdır");
+                this.reportValidity();
+            } else {
+                this.setCustomValidity("");
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
